@@ -6,7 +6,7 @@ const connection = async () => {
     await mongoose.connect(DATABASE_URL, {
       dbName: 'chatting',
     });
-    return Promise.resolve('Connected to database');
+    return Promise.resolve('🚀 Connected to database successfully!');
   } catch (error) {
     const err = error as unknown as Error;
     return Promise.reject(err.message);
